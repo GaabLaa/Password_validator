@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	font-family: sans-serif;
+	color: #fff;
+	background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.check {
+	margin-bottom: 20px;
+	font-size: 36px;
+}
+
+.input {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+}
+
+.input:focus {
+	outline: none;
+	border: 2px solid #00ffa0;
+}
+
+.passInfo {
+	color: #dddddd96;
+	margin-bottom: 60px;
+	font-size: 15px;
+}
+
+.information {
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+li {
+	padding: 3px;
+}
+
+.first-condition {
+	color: #ffffff7b;
+	font-size: 15px;
+	list-style-type: none;
+	padding-bottom: 15px;
+}
+
+.second-condition {
+	display: flex;
+	justify-content: space-between;
+	width: 425px;
+	margin-top: 30px;
+}
+
+.tooltip-special {
+	position: relative;
+	color: #00ffa0;
+}
+
+.tooltip-special:before {
+	position: absolute;
+	width: 100%;
+	padding: 10px 10px;
+    border-radius: 8px;
+    background-color: #999;
+    font-size: 14px;
+	content: '! @ # $ % ^ & * ( )';
+    bottom: 140%;
+	left: -10%;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.tooltip-special:hover::before {
+	opacity: 1;
+}
+
+
